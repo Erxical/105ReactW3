@@ -45,8 +45,8 @@ class Menu extends Component {
     render() {
         const menu = this.state.dishes.map((dish) => {
             return (
-              <div key={dish.id} className="col-12 mt-5">
-                <Media className="d-flex">
+              <div key={dish.id}>
+                <Media className="d-flex col-12 mt-5">
                   <Media left middle>
                       <Media object src={dish.image} alt={dish.name} />
                   </Media>
